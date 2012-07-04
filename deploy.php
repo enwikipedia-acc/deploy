@@ -19,5 +19,5 @@
 		die;
 	}
 	
-	passthru( './deploy.sh ' . $revision  );
+	passthru( './deploy.sh ' . $revision . ' 2>&1' );
 	die;
