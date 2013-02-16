@@ -2,7 +2,7 @@
 
 cd ../sand/
 
-git remote update origin
+git remote update
 
 git checkout $1
 
