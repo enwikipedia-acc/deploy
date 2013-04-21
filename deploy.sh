@@ -2,7 +2,8 @@
 
 cd ../sand/
 
-git remote update
+git fetch --all
+git fetch --tags
 
 git checkout $1
 
