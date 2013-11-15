@@ -13,7 +13,7 @@
 		"'branch.<branchname>.merge' in your configuration file.",
 		"Please specify which remote branch you want to use on the command",
 		"line and try again (e.g. 'git pull <repository> <refspec>').",
-		"See git-pull(1) for details",
+		"See git-pull(1) for details.",
 	);
 	
 	$revision = isset( $_GET['r'] ) ? $_GET['r'] : '';
