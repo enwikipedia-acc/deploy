@@ -19,5 +19,12 @@
 		die;
 	}
 	
-	passthru( './deploy.sh ' . $revision . ' 2>&1' );
+	$output = array();
+	exec( './deploy.sh ' . $revision . ' 2>&1', $output );
+	
+	foreach( $output as $line )
+	{
+		echo $line . "\n";
+	}
+	
 	die;
