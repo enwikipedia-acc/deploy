@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../sand/
+cd ../waca/
 
 git fetch --all
 git fetch --tags
