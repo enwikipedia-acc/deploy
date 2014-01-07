@@ -25,8 +25,8 @@
 		"do so (now or later) by using -b with the checkout command again. Example:",
 		"  git checkout -b new_branch_name",
 		"Please specify which branch you want to merge with on the command",
-		"Submodule 'lib/bootstrap-sortable' () registered for path 'lib/bootstrap-sortable'"
-		"Submodule 'lib/password_compat' () registered for path 'lib/password_compat'"
+		"Submodule 'lib/bootstrap-sortable' () registered for path 'lib/bootstrap-sortable'",
+		"Submodule 'lib/password_compat' () registered for path 'lib/password_compat'",
 	);
 	
 	$revision = isset( $_GET['r'] ) ? $_GET['r'] : '';
