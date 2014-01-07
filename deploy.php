@@ -10,6 +10,9 @@
 		"Fetching JohnFLewis",
 		"Fetching cyberpower678",
 		"Fetching t13",
+		"Fetching manishearth",
+		"Fetching mrb",
+		"Fetching theo",
 		"You are not currently on a branch, so I cannot use any",
 		"'branch.<branchname>.merge' in your configuration file.",
 		"Please specify which remote branch you want to use on the command",
@@ -21,6 +24,9 @@
 		"If you want to create a new branch to retain commits you create, you may",
 		"do so (now or later) by using -b with the checkout command again. Example:",
 		"  git checkout -b new_branch_name",
+		"Please specify which branch you want to merge with on the command",
+		"Submodule 'lib/bootstrap-sortable' () registered for path 'lib/bootstrap-sortable'"
+		"Submodule 'lib/password_compat' () registered for path 'lib/password_compat'"
 	);
 	
 	$revision = isset( $_GET['r'] ) ? $_GET['r'] : '';
