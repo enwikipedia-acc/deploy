@@ -47,7 +47,7 @@
 	}
 	
 	$output = array();
-	exec( './deploy.sh ' . $revision . ' 2>&1', $output );
+	exec( './deploy.sh ' . escapeshellarg($revision) . ' 2>&1', $output );
 	
 	foreach( $output as $line )
 	{
