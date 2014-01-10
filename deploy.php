@@ -46,6 +46,28 @@
 		die;
 	}
 	
+	
+	// get the latest stuff from the remotes.
+	exec( './fetch.sh' );
+
+	$found = false;
+	$revlist = array();
+	exec( './revlist.sh 2>&1', $revlist );
+	foreach( $revlist as $rev )
+	{
+		if(trim($rev) == $revision)
+		{
+			$found = true;
+			break;
+		}
+	}
+	
+	if(!$found)
+	{
+		echo("Revision not found. Please use entire SHA1 or remote branch format (eg. origin/master)");
+		die;
+	}
+	
 	$output = array();
 	exec( './deploy.sh ' . escapeshellarg($revision) . ' 2>&1', $output );
 	
