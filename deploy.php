@@ -48,7 +48,15 @@
 	
 	
 	// get the latest stuff from the remotes.
-	exec( './fetch.sh' );
+	$fetchOutput = array();
+	exec( './fetch.sh', $fetchOutput );
+	foreach( $fetchOutput as $line )
+	{
+		if(! in_array( $line, $ignorelist ) )
+		{
+			echo $line . "\n";
+		}
+	}
 
 	$found = false;
 	$revlist = array();
