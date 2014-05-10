@@ -27,6 +27,7 @@
 		"Please specify which branch you want to merge with on the command",
 		"Submodule 'lib/bootstrap-sortable' () registered for path 'lib/bootstrap-sortable'",
 		"Submodule 'lib/password_compat' () registered for path 'lib/password_compat'",
+		"Submodule 'lib/mediawiki-extensions-OAuth' () registered for path 'lib/mediawiki-extensions-OAuth'",
 	);
 	
 	$revision = isset( $_GET['r'] ) ? $_GET['r'] : '';
