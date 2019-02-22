@@ -13,6 +13,7 @@
 		"Fetching manishearth",
 		"Fetching mrb",
 		"Fetching theo",
+		"Fetching fastlizard4",
 		"You are not currently on a branch, so I cannot use any",
 		"'branch.<branchname>.merge' in your configuration file.",
 		"Please specify which remote branch you want to use on the command",
