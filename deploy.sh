@@ -1,11 +1,10 @@
 #!/bin/bash
 
-cd ../waca/
+cd ../rc/
 
 git checkout $1
 
-git submodule init
-git submodule update
-
 rm -r templates_c/
 mkdir templates_c/
+
+php maintenance/RegenerateStylesheets.php
