@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../waca/
+cd ../rc/
 
 git fetch --all
 git fetch --tags

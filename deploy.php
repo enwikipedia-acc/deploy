@@ -1,5 +1,4 @@
 <?php
-
 	require_once ("config.inc.php");
 	
 	$ignorelist = array(
@@ -16,6 +15,7 @@
 		"Fetching mdaniels5757",
 		"Fetching theo",
 		"Fetching fastlizard4",
+		"Fetching methecooldude",
 		"You are not currently on a branch, so I cannot use any",
 		"'branch.<branchname>.merge' in your configuration file.",
 		"Please specify which remote branch you want to use on the command",
@@ -79,16 +79,17 @@
 		echo("Revision not found. Please use entire SHA1 or remote branch format (eg. origin/master)");
 		die;
 	}
-	
+
+    echo "Running deployment...\n";
+
 	$output = array();
 	exec( './deploy.sh ' . escapeshellarg($revision) . ' 2>&1', $output );
-	
-	foreach( $output as $line )
-	{
-		if(! in_array( $line, $ignorelist ) )
-		{
-			echo $line . "\n";
-		}
-	}
-	
-	die;
+
+
+    $fileName = uniqid('logs/') . '.log';
+    file_put_contents($fileName, implode("\n", $output));
+
+    echo "Deployment complete. Please review the deployment log at https://accounts-dev.wmflabs.org/deploy/${fileName}\n";
+
+
+    die;

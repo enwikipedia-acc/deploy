@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../waca/
+cd ../rc/
 
 git branch -r
 git tag
